@@ -60,7 +60,7 @@ export default class Character implements Fighter {
     if (this._maxLifePoints + increaseLife >= this._race.maxLifePoints) {
       this._maxLifePoints = this._race.maxLifePoints;
     } else {
-      this._maxLifePoints += increaseLife;
+      this._maxLifePoints += getRandomInt(1, 10);
     }
     this._strength += getRandomInt(1, 10);
     this._dexterity += getRandomInt(1, 10);
